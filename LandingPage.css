@@ -1,0 +1,543 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Tabs {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*HTML Basis*/
+html {
+  background: linear-gradient(to bottom, #755231 0%, #4a0e06 100%);
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Header Style */
+header {
+  font-size: 3rem;
+  text-align: center;
+  font-family: Elephant;
+  display: flex;
+  flex-direction: column;
+}
+
+header > #Logo {
+  background-color: white;
+  border: 0.5rem solid #b58253;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  color: #4a0060;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: #b7282f;
+  font-size: 1.5rem;
+  margin-left: 32rem;
+  margin-right: 32rem;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  outline: 0.5rem solid #ff9700;
+  border-radius: 0rem 0rem 6rem 6rem;
+  color: white;
+}
+
+/* Navigation Flexbox */
+.TopMenu {
+  background-color: #94874d;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-family: Elephant;
+}
+
+.Tabcontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Navigation Horizontal Format */
+.Tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.TabButton {
+  padding: 0.5rem 5vmin 1rem;
+  border-radius: 6px 6px 0px 0px;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  background-color: #03758c;
+  color: #fff2b5;
+}
+
+/* Tab Button States */
+.TabButton:hover {
+  background-color: #ff9700;
+  color: #005060;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.TabButton:focus-visible {
+  /* Focus states are designed for keyboard users */
+  /* using -visible will hide this effect when a mouse is used*/
+  outline: 0.5rem solid #ff9700;
+  padding: 1.5rem 5vmin 1rem;
+}
+
+.TabButton:active {
+  padding: 1.5rem 5vmin 1rem;
+  background-color: white;
+}
+
+/* Breadcrumbs Formatting */
+ul.BreadCrumbs {
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+  list-style: none;
+  font-family: dubai;
+}
+
+ul.BreadCrumbs li {
+  display: inline;
+  font-size: 1.25rem;
+}
+
+ul.BreadCrumbs li + li:before {
+  padding-right: 8rem;
+  color: black;
+}
+
+ul.BreadCrumbs li a {
+  color: #0275d8;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Bread Crumb States */
+ul.BreadCrumbs li a:hover {
+  color: #ff9700;
+  text-decoration: underline;
+}
+
+ul.BreadCrumbs li a:active {
+  color: #b7282f;
+  padding: 0.5rem;
+}
+
+ul.BreadCrumbs li a:focus-visible {
+  outline: 0.25rem solid #b7282f;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+/*Article, Detail, Summary Formatting*/
+article, details {
+  /* background-color (old): #FFF2B5; */
+  background: linear-gradient(to bottom, #fff2b5 0%, #ffd77a 100%);
+}
+
+summary {
+  font-size: 2.25rem;
+  background-color: #ff9700;
+  color: #8f1319;
+  padding-left: 1rem;
+  border: 0.25rem outset #03758c;
+  margin-bottom: 0.25rem;
+  font-family: Elephant;
+  transition: all 0.3s ease;
+}
+
+/* Detail Summary States */
+summary:hover {
+  background-color: #ffd83b;
+}
+
+summary:active {
+  background-color: #03758c;
+  border: 0.25rem groove #fff2b5;
+  color: #fff2b5;
+}
+
+summary:focus-visible {
+  border: 0.5rem solid #b7282f;
+  background-color: #ffd83b;
+}
+
+/* Body Text Formatting */
+.InsHeader {
+  font-size: 2.25rem;
+  background-color: #ff9700;
+  color: #8f1319;
+  font-family: Elephant;
+}
+
+#NoBanner {
+  font-size: 2.25rem;
+  color: #b7282f;
+  font-family: Elephant;
+}
+
+.SubHead, h4 {
+  font-size: 1.75rem;
+  color: #005060;
+  font-family: Elephant;
+}
+
+.List {
+  margin: 1.25rem;
+}
+
+p, .List, figcaption {
+  color: #005060;
+  font-family: dubai;
+}
+
+.bulletside > li {
+  margin-left: 1.5rem;
+}
+
+.SegmentBody {
+  font-size: 1.25rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 1.15rem;
+}
+
+.Headlines > .InsHeader {
+  padding-left: 2rem;
+}
+
+/* Introduction Layout*/
+
+.Intro > .Headlines {
+  margin: 0.1rem 1rem 0.5rem;
+  /*padding-top: 0.5rem;*/
+}
+
+.IntroFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.IntroFlex > .IMGOnly {
+  margin: 0.5rem;
+}
+
+.IntroFlex > .IMGOnly > .SideIMG > img {
+  width: 20vw;
+  height: auto;
+  border: 0.5rem solid #005060;
+}
+
+/* Ingredients Grid Layout */
+
+.IngredientFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.IngredientFlex > .IMGOnly > .SideIMG > img {
+  margin-top: 2rem;
+  border: 0.5rem solid #005060;
+  width: 20vw;
+  height: auto;
+}
+
+.IngredientFlex > .IMGOnly > .SideIMG > figcaption {
+  text-align: center;
+}
+
+.IngredientFlex > .SegmentBody {
+  margin: auto 1rem auto;
+}
+
+/* Recipe Grid Layout */
+
+.RecipeFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+}
+
+.RecipeFlex > .IMGOnly {
+  background-color: #94874d;
+}
+
+.RecipeFlex > .IMGOnly > h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  color: #fff2b5;
+}
+
+.RecipeFlex > .IMGOnly > .SideIMG {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.RecipeFlex > .IMGOnly > .SideIMG > img {
+  border: 0.5rem solid #fff2b5;
+  width: auto;
+  height: 12vw;
+}
+
+.Note {
+  padding-top: 1.25rem;
+  margin-left: 2rem;
+  line-height: 1.5;
+  color: #fff2b5;
+  text-align: center;
+}
+
+/* Closing Layout */
+
+.Closing > .SegmentBody {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.Closing > .SegmentBody > #CTA {
+  background-color: #b7282f;
+  color: #fff2b5;
+  font-family: dubai;
+}
+
+.Closing > .SegmentBody > a {
+  color: blue;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.Closing > .SegmentBody > a:hover {
+  color: #ff9700;
+}
+
+.Closing > .SegmentBody > a:active {
+  color: #b7282f;
+}
+
+.Closing > .SegmentBody > a:focus-visible {
+  outline: 0.5rem solid #b7282f;
+}
+
+/* Footer Layout */
+.Credits {
+  background-color: #005060;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Credits > p,
+.Credits > a {
+  color: #fff2b5;
+  transition: all 0.3s ease;
+}
+
+.Credits > a:hover {
+  text-decoration: underline;
+  color: #ff9700;
+}
+
+.Credits > a:focus-visible {
+  outline: 0.5rem solid #ff9700;
+}
+
+/* Media Queries */
+@media (max-width: 968px) {
+  /* MQ - BODY - MQ */
+  body {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  /* MQ - HEADER - MQ */
+  header {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* MQ - Navigation - MQ */
+  .TopMenu {
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 1rem 0rem;
+    margin-top: 0.1rem;
+  }
+
+  .Tabs {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .TabButton {
+    padding: 0.5rem 5.75vmin 1rem;
+    border-radius: 6px 6px 0px 0px;
+    transition: all 0.3s ease;
+    font-size: 1.45rem;
+  }
+
+  /* MQ - Tab Button States - MQ */
+
+  .TabButton:focus-visible {
+    padding: 1rem 0rem 1rem 0rem;
+    outline: 0.5rem solid #ff9700;
+  }
+
+  .TabButton:active {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  /* MQ - Introduction Layout - MQ*/
+
+  .Intro > .Headlines {
+    margin: 0.5rem;
+    padding-top: 0.25rem;
+  }
+
+  .IntroFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .IntroFlex > .IMGOnly {
+    margin: 0.5rem;
+    align-self: center;
+  }
+
+  .IntroFlex > .IMGOnly > .SideIMG > img {
+    width: 70vw;
+    height: auto;
+    align-self: center;
+  }
+
+  .IntroFlex > .IMGOnly > .SideIMG {
+    display: flex;
+    justify: center;
+    padding-right: 5rem;
+  }
+
+  .IntroFlex > .IMGOnly > .SideIMG > figcaption {
+    padding-left: 2rem;
+  }
+  /* MQ - Ingredients Grid Layout - MQ */
+
+  .IngredientFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .IngredientFlex > .IMGOnly > .SideIMG > img {
+    margin: auto 4rem;
+    width: 70vw;
+    height: auto;
+  }
+
+  .IngredientFlex > .IMGOnly > .SideIMG > figcaption {
+    margin: 1rem;
+  }
+
+  /* MQ - Recipe Grid Layout - MQ */
+  .RecipeFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0rem;
+  }
+
+  .RecipeFlex > .SegmentBody {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .RecipeFlex > .IMGOnly > .SideIMG {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .RecipeFlex > .IMGOnly > .SideIMG > img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .Note {
+    padding-top: 0.2rem;
+    line-height: 1;
+  }
+
+  /* MQ - Closing Layout - MQ */
+
+  .Closing > .SegmentBody > a {
+    margin-bottom: 1rem;
+  }
+
+  /* MQ - Footer Layout - MQ */
+  .Credits {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Media Query for devices smaller than usual */
+  @media (max-width: 710px) {
+    .TabButton {
+      padding: 0.5rem 2vmin 1rem;
+      border-radius: 6px 6px 0px 0px;
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Media Query for atom-width devices */
+  @media (max-width: 405px) {
+    .TabButton {
+      padding: 0.5rem 1.5vmin 1rem;
+      border-radius: 6px 6px 0px 0px;
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+    }
+  }
+}
